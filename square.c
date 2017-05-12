@@ -17,6 +17,6 @@ scanf("%f",&c);
 d = a + b + c;
 printf("a + b + c = %f \n", d);
 e = sqrt (d);
-printf("the square root of a + b + c is %f \n",e);
+printf("the square root of %f is %f \n",d,e);
 return 0;
 }
