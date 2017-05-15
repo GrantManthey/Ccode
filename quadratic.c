@@ -29,8 +29,8 @@ printf("f is %f: \n",f);
 printf("g is %f: \n",g);
 printf("h is %f: \n",h);
 printf("i is %f: \n",i);
-printf("j is %f: \n",j);
-printf("k is %f: \n",k);
+printf("answer 1 is %f: \n",j);
+printf("answer 2 is %f: \n",k);
 
 return 0;
 }
