@@ -22,6 +22,9 @@ h = sqrt(g);
 i = h/(2*a);
 j = d + i ;
 k = d - i;
+  if (g < 0) 
+{
+}
 
 printf("d is %f: \n",d);
 printf("e is %f: \n",e);
