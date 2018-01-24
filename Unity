@@ -1,0 +1,78 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Learning1 : MonoBehaviour
+{
+    public float moveSpeed = 10f;
+    public int movement = 0;
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            if (movement <= 5)
+            {
+                transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+                movement = movement + 1;
+            }
+            else
+            {
+                print("whoops");
+            }
+
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            if (movement <= 5)
+            {
+                transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
+                movement = movement + 1;
+            }
+            else
+            {
+                print("whoops");
+            }
+
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            if (movement <= 5)
+            {
+                transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+                movement = movement + 1;
+            }
+            else
+            {
+                print("whoops");
+            }
+
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            if (movement <= 5)
+            {
+                transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+                movement = movement + 1;
+            }
+            else
+            {
+                print("whoops");
+            }
+
+        }
+    }
+
+
+}
+
+
+
